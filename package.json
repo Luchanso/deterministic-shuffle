@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "release-patch": "npm version patch -m 'bump patch version'",
-    "build": "babel src -d .build --ignore __test__ && cp -r ./src/**/*.d.ts package.json yarn.lock .build",
-    "publish": "rm -rf .build && yarn && yarn test && yarn build && cd .build && npm publish",
+    "build": "babel src -d .build --ignore __test__ && cp -r ./src/index.d.ts package.json yarn.lock .build",
+    "npm-publish": "rm -rf .build && yarn && yarn test && yarn build && cd .build && npm publish",
     "test": "jest --coverage"
   },
   "devDependencies": {
