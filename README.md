@@ -20,6 +20,6 @@ const startDate = new Date(2017, 0, 1);
 console.log(shuffle(array, startDate));
 ```
 
-Maybe in futer:
+Maybe in future:
 
 - [ ] select custom range
